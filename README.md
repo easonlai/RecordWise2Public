@@ -12,6 +12,43 @@
 
 ---
 
+## 📲 Download the published app
+
+RecordWise2 is live on the public app stores — install it on your own
+device to see the architecture described below running end-to-end
+against your own Azure tenant.
+
+| Store | Platforms | Link |
+|---|---|---|
+| **Apple App Store** | iPhone · iPad · Mac (Apple silicon & Intel macOS 11+) | [apps.apple.com/hk/app/recordwise2/id6769808220](https://apps.apple.com/hk/app/recordwise2/id6769808220) |
+| **Google Play** | Android phones & tablets | [play.google.com/store/apps/details?id=app.minions.recordwise2](https://play.google.com/store/apps/details?id=app.minions.recordwise2) |
+
+<p align="center">
+  <a href="https://apps.apple.com/hk/app/recordwise2/id6769808220">
+    <img alt="Download on the App Store"
+         src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+         height="50">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://play.google.com/store/apps/details?id=app.minions.recordwise2">
+    <img alt="Get it on Google Play"
+         src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+         height="50">
+  </a>
+</p>
+
+The published builds are produced from this exact codebase — same
+`pubspec.yaml` version line drives iOS, iPadOS, macOS, and Android
+artifacts. See [§11 Build matrix](#11-build-matrix--release-configuration)
+for the per-platform commands.
+
+> **Bring your own Azure.** The published apps do **not** ship with
+> embedded Azure credentials — on first launch, open **Settings** and
+> paste your own Azure AI Speech key + region and your Azure OpenAI
+> endpoint + key + deployment. See [§7 Azure integration deep-dive](#7-azure-integration-deep-dive).
+
+---
+
 ## Table of Contents
 
 1. [Project Goal & Scope](#1-project-goal--scope)
